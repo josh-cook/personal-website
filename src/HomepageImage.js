@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './cartoon-image.png';
+import logo from './components/cartoon-image.png';
 
 function HomePageImage() {
     return ( 
-        <img src={logo} style={{width: 500}} alt="Logo"/>
+        <img src={logo} style={{width: 100}} alt="Logo"/>
     );
 }
 
