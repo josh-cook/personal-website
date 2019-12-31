@@ -1,14 +1,20 @@
 import React from 'react';
 import './App.css';
+import './HomepageImage';
+import HomePageImage from './HomepageImage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome To Josh's Website
-        </p>
-      </header>
+    <div className="app">
+      <HomePageImage />
+
+      <div>
+        <header className="app-header">
+          <p>
+            Welcome To Josh's Website
+          </p>
+        </header>
+      </div>
     </div>
   );
 }
