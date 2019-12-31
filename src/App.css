@@ -10,3 +10,8 @@
   font-size: 2em;
   color: #282c34;
 }
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}

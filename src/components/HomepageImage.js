@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './components/cartoon-image.png';
+import logo from '../assets/cartoon-image.png';
 
 function HomePageImage() {
     return ( 
