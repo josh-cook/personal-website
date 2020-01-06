@@ -3,16 +3,18 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: 'Fira';
+  src: url("../src/fonts/FiraCode-VariableFont:wght.ttf");
+}
+
 body {
   margin: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Fira';
 }
