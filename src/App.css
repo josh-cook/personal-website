@@ -17,13 +17,3 @@
 .content-area {
   padding: 0 8em;
 }
-
-.logo {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.github-logo {
-  display: flex;
-  justify-content: flex-end;
-}

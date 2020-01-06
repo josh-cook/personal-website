@@ -1,20 +1,15 @@
 import React from 'react';
 import './App.css';
-import HomePageImage from './components/HomepageImage';
+import GithubCorner from 'react-github-corner';
 import JoshText from './components/JoshText';
 import Content from './components/Content';
-import GithubLinkImage from './components/GithubLinkImage';
-
 
 function App() {
   return (
     <div className="app">
         <header className="app-header">
-          <div className="logo">
-            <HomePageImage />
-          </div>
           <div className="github-logo">
-            <GithubLinkImage /> 
+            <GithubCorner href="https://github.com/josh-cook" /> 
           </div>
         </header>
 
