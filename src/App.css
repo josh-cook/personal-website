@@ -82,6 +82,19 @@ a {
 
 .link {
   width: 1em;
+  height: 1em;
+}
+
+.link:hover .link__text {
+  display: none;
+}
+
+.link__img {
+  display: none;
+}
+
+.link:hover .link__img {
+  display: block;
 }
 
 .link__text--tw:after {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Github from '../assets/github.svg';
-import Twitter from '../assets/github.svg';
-import LinkedIn from '../assets/github.svg';
+import Twitter from '../assets/twitter.svg';
+import LinkedIn from '../assets/linkedin.svg';
 import Link from '../components/Link';
 
 function Links() {
