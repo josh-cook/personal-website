@@ -1,17 +1,15 @@
 import React from 'react';
+import Github from '../assets/github.svg';
+import Twitter from '../assets/github.svg';
+import LinkedIn from '../assets/github.svg';
+import Link from '../components/Link';
 
 function Links() {
     return ( 
         <div className="links">
-            <div className="link__twitter">
-                <a href="https://twitter.com/_CptDreadBeard">tw</a>
-            </div>
-            <div className="link__github">
-                <a href="https://github.com/josh-cook">gh</a>    
-            </div>
-            <div className="link__linkedin">
-                <a href="https://www.linkedin.com/in/joshua-cook-95b61625/">li</a>
-            </div>
+            <Link link="https://github.com/josh-cook" imageLink={Twitter} linkText="tw"/>
+            <Link link="https://github.com/josh-cook" imageLink={Github} linkText="gh"/>
+            <Link link="https://www.linkedin.com/in/joshua-cook-95b61625/" imageLink={LinkedIn} linkText="li"/>
         </div>
     );
 }
