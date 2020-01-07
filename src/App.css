@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Road Rage';
+  src: url("../src/fonts/Road_Rage.otf");
+}
+
+@font-face {
+  font-family: 'Fontania';
+  src: url("../src/fonts/Fontania-MjXr.ttf");
+}
+
 .app {
   text-align: center;
   display: flex;
@@ -5,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2em;
-  color: #282c34;
+  color: #0C090D;
 }
 
 .app-header {
@@ -19,28 +29,50 @@
   width: 40%;
 }
 
-@font-face {
-  font-family: 'Road Rage';
-  src: url("../src/fonts/Road_Rage.otf");
-}
-
-
-.title {
+h1 {
   font-family: 'Road Rage';
   font-size: 3em;
-  margin: 0;
+  width: 100%;
 }
 
-.subTitle {
-  font-family: 'Road Rage';
-  font-size: 1em;
-  margin: 0;
+.titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.subtitle--dev {
+  color: #F15946;
+}
+
+.subtitle--dev:after {
+  content: ". ";
+  color: #0C090D;
+}
+
+.subtitle--game {
+  color: #5A5082;
+}
+
+.subtitle--game:after {
+  content: ". ";
+  color: #0C090D;
+}
+
+.subtitle--bass {
+  color: #E01A4F;
+}
+
+.subtitle--bass:after {
+  content: ". ";
+  color: #0C090D;
 }
 
 .links {
   display: flex;
   justify-content: space-evenly;
-  width: 200px;
+  width: 15%;
+  font-weight: 900;
 }
 
 a { 
@@ -48,29 +80,29 @@ a {
   text-decoration: none;
 } 
 
-.link__twitter a::after, .link__twitter a::hover {
-  color: #53B3CB;
+.link__twitter a:after, .link__twitter a:hover {
+  color: #3291DA;
 }
 
-.link__twitter::after {
+.link__twitter:after {
   content: ". ";
-  color: #53B3CB;
+  color: #3291DA;
 }
 
-.link__linkedin a::after, .link__twitter a::hover {
-  color: #53B3CB;
+.link__github a:after, .link__github a:hover {
+  color: #7BC96F;
 }
 
-.link__linkedin::after {
+.link__github:after {
   content: ".";
-  color: #F15946;
+  color: #7BC96F;
 }
 
-.link__github a::after, .link__twitter a::hover {
-  color: #53B3CB;
+.link__linkedin a:after, .link__linkedin a:hover {
+  color: #2877B5;
 }
 
-.link__github::after {
+.link__linkedin:after {
   content: ".";
-  color: #E01A4F;
+  color: #2877B5;
 }

@@ -1,20 +1,17 @@
 html {
-  background-image: linear-gradient(to bottom, rgba(0,255,213,0), rgba(83,179,203,1));
+  background-image: linear-gradient(to bottom right, rgba(0,255,213,0), rgba(83,179,203,1));
   height: 100%;
 }
 
 @font-face {
-  font-family: 'Fira';
-  src: url("../src/fonts/FiraCode-VariableFont:wght.ttf");
+  font-family: 'Sulphur Point';
+  src: url("../src/fonts/SulphurPoint-Light.ttf");
 }
 
 body {
   margin: 1em;
-  font-family: 'Fira';
+  color: #0C090D;
+  font-family: 'Sulphur Point';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: 'Fira';
 }
