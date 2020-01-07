@@ -44,7 +44,7 @@
 }
 
 a { 
-  color: inherit;
+  color: black;
   text-decoration: none;
 } 
 
@@ -57,9 +57,17 @@ a {
   color: #53B3CB;
 }
 
+.link__linkedin a::after, .link__twitter a::hover {
+  color: #53B3CB;
+}
+
 .link__linkedin::after {
   content: ".";
   color: #F15946;
+}
+
+.link__github a::after, .link__twitter a::hover {
+  color: #53B3CB;
 }
 
 .link__github::after {

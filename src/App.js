@@ -15,9 +15,7 @@ function App() {
         </header>
 
         <div className="content-area">
-          <p>
-            <JoshText />
-          </p>
+          <JoshText />
           <Content />
           <BOI />
         </div>
