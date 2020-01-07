@@ -80,29 +80,21 @@ a {
   text-decoration: none;
 } 
 
-.link__twitter a:after, .link__twitter a:hover {
-  color: #3291DA;
+.link {
+  width: 1em;
 }
 
-.link__twitter:after {
+.link__text--tw:after {
   content: ". ";
   color: #3291DA;
 }
 
-.link__github a:after, .link__github a:hover {
-  color: #7BC96F;
-}
-
-.link__github:after {
+.link__text--gh:after {
   content: ".";
   color: #7BC96F;
 }
 
-.link__linkedin a:after, .link__linkedin a:hover {
-  color: #2877B5;
-}
-
-.link__linkedin:after {
+.link__text--li:after {
   content: ".";
   color: #2877B5;
 }
