@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-.links > * {
+.links {
   display: flex;
   justify-content: space-evenly;
   width: 200px;
@@ -53,7 +53,7 @@ a {
 }
 
 .link__twitter::after {
-  content: ".";
+  content: ". ";
   color: #53B3CB;
 }
 

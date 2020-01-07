@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="app">
         <header className="app-header">
-          <div className="links">
             <Links />
-          </div>
         </header>
 
         <div className="content-area">
