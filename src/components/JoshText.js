@@ -1,9 +1,13 @@
 import React from 'react';
-import text from '../assets/joshtext.png';
 
 function JoshText() {
     return ( 
-        <img src={text} style={{width: 500}} alt="textLogo"/>
+        <div className="titles">
+            <h1>Joshua         Cook</h1>
+            <h3 className="subtitle subtitle--dev">Dev</h3>
+            <h3 className="subtitle subtitle--game">Game</h3>
+            <h3 className="subtitle subtitle--bass">Bass</h3>
+        </div>
     );
 }
 
