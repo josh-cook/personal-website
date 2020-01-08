@@ -26,13 +26,22 @@
 
 .content-area {
   padding: 0 8em;
-  width: 40%;
+  width: 50%;
 }
 
 h1 {
   font-family: 'Road Rage';
   font-size: 3em;
   width: 100%;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Road Rage';
+}
+
+.links {
+  font-family: 'Road Rage';
 }
 
 .titles {
