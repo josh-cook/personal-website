@@ -91,7 +91,7 @@ a {
 
 .link {
   width: 1em;
-  height: 1em;
+  height: 60em;
 }
 
 .link:hover .link__text {
