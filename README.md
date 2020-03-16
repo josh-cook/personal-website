@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/518ffb76-2076-45ec-8bfd-a5534ec510cf/deploy-status)](https://app.netlify.com/sites/clever-kalam-bc3103/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
