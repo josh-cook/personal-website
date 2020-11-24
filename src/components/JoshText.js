@@ -1,7 +1,7 @@
 import React from 'react';
 
 function JoshText() {
-    return ( 
+    return (
         <div className="titles">
             <h1>Joshua         Cook</h1>
             <h3 className="subtitle subtitle--dev">Dev</h3>
