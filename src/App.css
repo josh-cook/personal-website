@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Road Rage';
+  font-family: "Road Rage";
   src: url("../src/fonts/Road_Rage.otf");
 }
 
 @font-face {
-  font-family: 'Fontania';
+  font-family: "Fontania";
   src: url("../src/fonts/Fontania-MjXr.ttf");
 }
 
 @media (min-width: 724px) {
   .app {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
 
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #0C090D;
+  color: #0c090d;
 }
 
 .app-header {
@@ -37,14 +37,19 @@
 }
 
 h1 {
-  font-family: 'Road Rage';
+  font-family: "Road Rage";
   font-size: 3em;
   width: 100%;
   margin-bottom: 0;
 }
 
 h3 {
-  font-family: 'Road Rage';
+  font-family: "Road Rage";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .titles {
@@ -54,30 +59,30 @@ h3 {
 }
 
 .subtitle--dev {
-  color: #F15946;
+  color: #5a5082;
 }
 
 .subtitle--dev:after {
   content: ". ";
-  color: #0C090D;
+  color: #0c090d;
 }
 
 .subtitle--game {
-  color: #5A5082;
+  color: #f15946;
 }
 
 .subtitle--game:after {
   content: ". ";
-  color: #0C090D;
+  color: #0c090d;
 }
 
 .subtitle--bass {
-  color: #E01A4F;
+  color: #e01a4f;
 }
 
 .subtitle--bass:after {
   content: ". ";
-  color: #0C090D;
+  color: #0c090d;
 }
 
 .links {
@@ -85,7 +90,7 @@ h3 {
   justify-content: space-evenly;
   width: 15%;
   font-weight: 900;
-  font-family: 'Road Rage';
+  font-family: "Road Rage";
 }
 
 @media (max-width: 623px) {
@@ -94,11 +99,6 @@ h3 {
   }
 }
 
-a { 
-  color: black;
-  text-decoration: none;
-} 
-
 .link {
   width: 1em;
   height: 1em;
@@ -106,7 +106,7 @@ a {
 
 @media (max-width: 623px) {
   .link {
-      padding-right: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -124,15 +124,15 @@ a {
 
 .link__text--tw:after {
   content: ". ";
-  color: #3291DA;
+  color: #3291da;
 }
 
 .link__text--gh:after {
   content: ".";
-  color: #7BC96F;
+  color: #7bc96f;
 }
 
 .link__text--li:after {
   content: ".";
-  color: #2877B5;
+  color: #2877b5;
 }

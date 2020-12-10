@@ -3,7 +3,6 @@ import './App.css';
 import JoshText from './components/JoshText';
 import Content from './components/Content';
 import Links from './components/Links';
-import BOI from './components/BindingOfIsaac';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         <div className="content-area">
           <JoshText />
           <Content />
-          <BOI />
         </div>
     </div>
   );

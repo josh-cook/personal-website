@@ -5,7 +5,7 @@ import LinkedIn from '../assets/linkedin.svg';
 import Link from '../components/Link';
 
 function Links() {
-    return ( 
+    return (
         <div className="links">
             <Link link="https://twitter.com/cptjoshdarnit" imageLink={Twitter} linkText="tw"/>
             <Link link="https://github.com/josh-cook" imageLink={Github} linkText="gh"/>
