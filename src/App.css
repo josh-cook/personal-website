@@ -122,11 +122,6 @@ a {
   display: block;
 }
 
-.link__text--tw:after {
-  content: ". ";
-  color: #3291da;
-}
-
 .link__text--gh:after {
   content: ".";
   color: #7bc96f;

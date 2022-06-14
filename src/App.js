@@ -10,7 +10,7 @@ function App() {
         <header className="app-header">
             <Links />
         </header>
-
+        
         <div className="content-area">
           <JoshText />
           <Content />
