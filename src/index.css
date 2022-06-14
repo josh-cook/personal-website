@@ -1,17 +1,21 @@
 html {
-  background-image: linear-gradient(to bottom right, rgba(0,255,213,0), rgba(241, 89, 70, 1));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 255, 213, 0),
+    rgba(241, 89, 70, 1)
+  );
   height: 100%;
 }
 
 @font-face {
-  font-family: 'Sulphur Point';
+  font-family: "Sulphur Point";
   src: url("../src/fonts/SulphurPoint-Light.ttf");
 }
 
 body {
   margin: 1em;
-  color: #0C090D;
-  font-family: 'Sulphur Point';
+  color: #0c090d;
+  font-family: "Sulphur Point";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
