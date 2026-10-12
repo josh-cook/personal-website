@@ -1,6 +1,6 @@
 import React from "react";
 
-function JoshText() {
+export const TitleText = () => {
   return (
     <div className="titles">
       <h1>Joshua Cook</h1>
@@ -30,4 +30,4 @@ function JoshText() {
   );
 }
 
-export default JoshText;
+export default TitleText;

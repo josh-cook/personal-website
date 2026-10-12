@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-import JoshText from "./components/JoshText";
-import Content from "./components/Content";
-import Links from "./components/Links";
+import { Content, TitleText, Links } from "./components";
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
       </header>
 
       <div className="content-area">
-        <JoshText />
+        <TitleText />
         <Content />
       </div>
     </div>
