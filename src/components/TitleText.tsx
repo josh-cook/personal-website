@@ -1,5 +1,3 @@
-import React from "react";
-
 export const TitleText = () => {
   return (
     <div className="titles">
@@ -28,6 +26,6 @@ export const TitleText = () => {
       </h3>
     </div>
   );
-}
+};
 
 export default TitleText;

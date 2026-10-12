@@ -1,4 +1,3 @@
-import React from "react";
 import Github from "../assets/github.svg";
 import LinkedIn from "../assets/linkedin.svg";
 import Link from "./Link";
@@ -18,6 +17,6 @@ export const Links = () => {
       />
     </div>
   );
-}
+};
 
 export default Links;

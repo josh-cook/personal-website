@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Content = () => {
   return (
     <div className="content">
@@ -7,6 +5,6 @@ export const Content = () => {
       music.
     </div>
   );
-}
+};
 
 export default Content;
