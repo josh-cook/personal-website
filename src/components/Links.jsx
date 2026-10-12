@@ -1,9 +1,9 @@
 import React from "react";
 import Github from "../assets/github.svg";
 import LinkedIn from "../assets/linkedin.svg";
-import Link from "../components/Link";
+import Link from "./Link";
 
-function Links() {
+export const Links = () => {
   return (
     <div className="links">
       <Link
@@ -12,7 +12,7 @@ function Links() {
         linkText="gh"
       />
       <Link
-        link="https://www.linkedin.com/in/joshua-cook-95b61625/"
+        link="https://www.linkedin.com/in/joshua-c-95b61625/"
         imageLink={LinkedIn}
         linkText="li"
       />

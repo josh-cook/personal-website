@@ -1,6 +1,6 @@
 import React from "react";
 
-function Link(props) {
+export const Link = (props) => {
   return (
     <div className="link">
       <a href={props.link}>

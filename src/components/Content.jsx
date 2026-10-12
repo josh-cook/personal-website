@@ -1,6 +1,6 @@
 import React from "react";
 
-function Content() {
+export const Content = () => {
   return (
     <div className="content">
       A developer based in the heart of Manchester, desired to game and make
