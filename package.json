@@ -15,7 +15,9 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^7.0.1",
@@ -24,6 +26,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "jsdom": "^29.1.1",
+    "oxlint": "^1.88.0",
     "prettier": "3.9.10",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
