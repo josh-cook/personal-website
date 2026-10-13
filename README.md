@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/546a7311-7be4-45d6-b510-1fb42e534140/deploy-status)](https://app.netlify.com/projects/joshcookdev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6bc78f6-5a05-4414-a4ef-8257c2173154/deploy-status)](https://app.netlify.com/projects/joshcookdev/deploys)
 
 ## Personal Website
 
