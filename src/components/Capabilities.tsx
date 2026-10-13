@@ -2,7 +2,7 @@ const capabilities = [
   {
     number: "01",
     title: "Development",
-    description: "Creative code, tools and technology.",
+    description: "Creative code, tools, and technology.",
     href: "https://github.com/josh-cook",
   },
   {
