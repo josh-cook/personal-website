@@ -1,4 +1,4 @@
-name: Prettier
+name: autofix.ci
 on:
   pull_request:
   push:
@@ -9,10 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
-      - name: Install dependencies
-        run: npm ci
-      - name: Run Prettier
-        run: npx prettier . --write
+      - run: npm ci
+      - run: npx prettier . --write
       - uses: autofix-ci/action@v1
         with:
           commit-message: "Apply Prettier format"
