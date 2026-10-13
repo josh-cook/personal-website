@@ -1,11 +1,17 @@
-@font-face {
-  font-family: "Road Rage";
-  src: url("../src/fonts/Road_Rage.otf");
-}
+:root {
+  --coral: #F6A19A;
+  --ink: #151515;
+  --paper: #FFF9F5;
+  --muted: #77716F;
+  --line: #D9C8C3;
 
-@font-face {
-  font-family: "Fontania";
-  src: url("../src/fonts/Fontania-MjXr.ttf");
+  --font-display: "Road Rage", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-gap: clamp(4rem, 10vw, 9rem);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 @media (min-width: 724px) {
@@ -20,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #0c090d;
+  color: var(--ink);
 }
 
 .app-header {
@@ -37,14 +43,14 @@
 }
 
 h1 {
-  font-family: "Road Rage";
+  font-family: var(--font-display);
   font-size: 3em;
   width: 100%;
   margin-bottom: 0;
 }
 
 h3 {
-  font-family: "Road Rage";
+  font-family: var(--font-display);
 }
 
 a {
