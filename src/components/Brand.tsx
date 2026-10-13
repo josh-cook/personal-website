@@ -20,9 +20,8 @@ export const Brand = () => {
   const stop = () => setIndex(null)
 
   return (
-    <a
+    <p
       className="brand"
-      href="#top"
       aria-label="Joshua Cook home"
       onMouseEnter={start}
       onMouseLeave={stop}
@@ -32,7 +31,7 @@ export const Brand = () => {
       <span className="brand-text" key={index ?? 'jc'} aria-hidden="true">
         {index === null ? 'JC.' : PHRASES[index]}
       </span>
-    </a>
+    </p>
   )
 }
 

@@ -270,6 +270,7 @@ a:focus-visible {
 
 .brand {
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .brand-text {
