@@ -3,7 +3,7 @@
   src: url('./fonts/SulphurPoint-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 300;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url('./fonts/FiraCode-VariableFont:wght.ttf') format('truetype');
   font-style: normal;
   font-weight: 300 700;
-  font-display: swap;
+  font-display: block;
 }
 
 html {
