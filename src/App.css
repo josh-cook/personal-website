@@ -1,133 +1,323 @@
-@font-face {
-  font-family: "Road Rage";
-  src: url("../src/fonts/Road_Rage.otf");
+:root {
+  --coral: #f6a19a;
+  --ink: #151515;
+  --paper: #fff9f5;
+  --muted: #77716f;
+  --line: #d9c8c3;
+  --font-display: "Sulphur Point", Arial, sans-serif;
+  --font-body: "Sulphur Point", Arial, sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --frame-space: clamp(0.4rem, 2vw, 1.5rem);
+  --page-gutter: clamp(1rem, 2.5vw, 2rem);
+  --section-gap: clamp(2.5rem, 6vw, 5rem);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-@font-face {
-  font-family: "Fontania";
-  src: url("../src/fonts/Fontania-MjXr.ttf");
-}
-
-@media (min-width: 724px) {
-  .app {
-    font-size: 2em;
-  }
+body {
+  font-family: var(--font-body);
 }
 
 .app {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #0c090d;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  color: var(--ink);
+  background: var(--paper);
 }
 
 .app-header {
-  width: 100%;
   display: flex;
+  min-height: 4.5rem;
+  align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  padding: 0 var(--page-gutter);
+  background: var(--coral);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
-@media (min-width: 724px) {
-  .content-area {
-    padding: 0 8em;
-    width: 50%;
-  }
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-h1 {
-  font-family: "Road Rage";
-  font-size: 3em;
-  width: 100%;
-  margin-bottom: 0;
+.header-note {
+  margin: 0;
 }
 
-h3 {
-  font-family: "Road Rage";
-}
-
+.menu-link,
+.brand,
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+.menu-link,
+.hero-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
 }
 
 .titles {
+  max-width: 58rem;
+  padding: clamp(2.25rem, 6vw, 5rem) var(--page-gutter) var(--section-gap);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hero {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  min-height: min(36rem, 68vh);
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--coral);
 }
 
-.subtitle--dev {
-  color: #5a5082;
+.titles .eyebrow {
+  color: var(--ink);
 }
 
-.subtitle--dev:after {
-  content: ". ";
-  color: #0c090d;
+.titles .eyebrow a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
-.subtitle--game {
-  color: #f15946;
+.titles h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
 }
 
-.subtitle--game:after {
-  content: ". ";
-  color: #0c090d;
+.hero-lead {
+  margin: 0.8rem 0 0;
+  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+  line-height: 1.35;
 }
 
-.subtitle--bass {
-  color: #e01a4f;
+.hero-description {
+  max-width: 42rem;
+  margin: 0.5rem 0 0;
+  color: rgb(21 21 21 / 75%);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.5;
 }
 
-.subtitle--bass:after {
-  content: ". ";
-  color: #0c090d;
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 var(--page-gutter) 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.hero-bottom p {
+  margin: 0;
+}
+
+.capabilities {
+  padding: 1.25rem var(--page-gutter) 1.5rem;
+  background: var(--paper);
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-heading > span,
+.capability-number,
+.capability-description {
+  color: var(--muted);
+}
+
+.section-heading > span,
+.capability-number {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.capability {
+  display: grid;
+  min-height: 7rem;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  transition: padding var(--ease) 180ms;
+}
+
+.capability:hover {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.capability-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.capability-title {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.capability-description {
+  font-size: 0.9rem;
+}
+
+.capability-arrow {
+  font-size: 1.1rem;
+}
+
+.note {
+  padding: 1.5rem var(--page-gutter) 1.75rem;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.note .eyebrow {
+  color: var(--coral);
+}
+
+.note h2 {
+  max-width: 48rem;
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.note > p:not(.eyebrow) {
+  max-width: 48rem;
+  margin: 0;
+  color: rgb(255 249 245 / 78%);
+  line-height: 1.55;
+}
+
+.contact {
+  padding: 1.5rem var(--page-gutter) 1.25rem;
+  background: var(--coral);
+}
+
+.contact h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-bottom {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
 }
 
 .links {
   display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  font-weight: 900;
-  font-family: "Road Rage";
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
-@media (max-width: 623px) {
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.social-link img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (min-width: 760px) {
+  .hero {
+    min-height: 32rem;
+  }
+
+  .capabilities {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .capability {
+    min-height: 7.25rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .app-header {
+    min-height: 3.75rem;
+    font-size: 0.65rem;
+  }
+
+  .header-note {
+    max-width: 8rem;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 28rem;
+  }
+
+  .hero-bottom,
+  .contact-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .links {
-    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .capability {
+    min-height: 6.25rem;
   }
 }
 
-.link {
-  width: 1em;
-  height: 1em;
-}
-
-@media (max-width: 623px) {
-  .link {
-    padding-right: 1em;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
-}
-
-.link:hover .link__text {
-  display: none;
-}
-
-.link__img {
-  display: none;
-}
-
-.link:hover .link__img {
-  display: block;
-}
-
-.link__text--gh:after {
-  content: ".";
-  color: #7bc96f;
-}
-
-.link__text--li:after {
-  content: ".";
-  color: #2877b5;
 }

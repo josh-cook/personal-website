@@ -4,18 +4,18 @@ import Link from "./Link";
 
 export const Links = () => {
   return (
-    <div className="links">
+    <nav className="links" aria-label="Social links">
       <Link
         link="https://github.com/josh-cook"
         imageLink={Github}
-        linkText="gh"
+        linkText="GitHub"
       />
       <Link
         link="https://www.linkedin.com/in/joshua-c-95b61625/"
         imageLink={LinkedIn}
-        linkText="li"
+        linkText="LinkedIn"
       />
-    </div>
+    </nav>
   );
 };
 

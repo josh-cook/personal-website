@@ -6,16 +6,10 @@ type LinkProps = {
 
 export const Link = ({ link, imageLink, linkText }: LinkProps) => {
   return (
-    <div className="link">
-      <a href={link}>
-        <span className={`link__img link__img--${linkText}`}>
-          <img src={imageLink} alt="" />
-        </span>
-        <span className={`link__text link__text--${linkText}`}>
-          {linkText}
-        </span>
-      </a>
-    </div>
+    <a className="social-link" href={link}>
+      <img src={imageLink} alt="" />
+      <span>{linkText}</span>
+    </a>
   );
 };
 
