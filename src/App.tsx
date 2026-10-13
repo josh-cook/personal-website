@@ -1,13 +1,11 @@
-import "./App.css";
-import { Content, Footer, TitleText } from "./components";
+import './App.css'
+import { Brand, Content, Footer, TitleText } from './components'
 
 function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <a className="brand" href="#top" aria-label="Joshua Cook home">
-          JC.
-        </a>
+        <Brand />
       </header>
 
       <main>
@@ -24,7 +22,7 @@ function App() {
         <Footer />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -4,9 +4,9 @@
   --paper: #fff9f5;
   --muted: #77716f;
   --line: #d9c8c3;
-  --font-display: "Sulphur Point", Arial, sans-serif;
-  --font-body: "Sulphur Point", Arial, sans-serif;
-  --font-mono: "Fira Code", monospace;
+  --font-display: 'Sulphur Point', Arial, sans-serif;
+  --font-body: 'Sulphur Point', Arial, sans-serif;
+  --font-mono: 'Fira Code', monospace;
   --frame-space: clamp(0.4rem, 2vw, 1.5rem);
   --page-gutter: clamp(1rem, 2.5vw, 2rem);
   --section-gap: clamp(2.5rem, 6vw, 5rem);
@@ -266,6 +266,22 @@ a {
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
+}
+
+.brand {
+  white-space: nowrap;
+}
+
+.brand-text {
+  display: inline-block;
+  animation: brand-fade 600ms var(--ease);
+}
+
+@keyframes brand-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.25em);
+  }
 }
 
 @media (min-width: 760px) {
