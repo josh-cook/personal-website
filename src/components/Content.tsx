@@ -19,7 +19,7 @@ export const Content = () => {
 
       <section className="note" id="about" aria-labelledby="note-title">
         <p className="eyebrow">A note from me</p>
-        <h2 id="note-title">Curiosity first. Everything else follows.</h2>
+        <h2 id="note-title">I like figuring things out.</h2>
         <p>
           I like problem solving with all things technology, whether that's
           writing code or pulling things apart to see how they work.
