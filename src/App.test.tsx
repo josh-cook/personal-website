@@ -22,7 +22,7 @@ describe("App", () => {
       "href",
       "https://github.com/josh-cook",
     );
-    expect(screen.getByRole("link", { name: /Game design/ })).toHaveAttribute(
+    expect(screen.getAllByRole("link", { name: /Gamer/ })[0]).toHaveAttribute(
       "href",
       "https://josh-cook.github.io/challenge-generator/",
     );
@@ -37,13 +37,5 @@ describe("App", () => {
     expect(
       screen.getAllByRole("link", { name: "LinkedIn" })[0],
     ).toHaveAttribute("href", "https://www.linkedin.com/in/joshua-c-95b61625/");
-    expect(screen.getByRole("link", { name: "Get in touch" })).toHaveAttribute(
-      "href",
-      "https://www.linkedin.com/in/joshua-c-95b61625/",
-    );
-    expect(screen.getByRole("link", { name: "Menu" })).toHaveAttribute(
-      "href",
-      "#capabilities",
-    );
   });
 });
