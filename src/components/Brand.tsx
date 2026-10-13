@@ -7,6 +7,8 @@ const PHRASES = [
   'Joshua Cook',
 ]
 
+const MAIN_BRAND = 'JC.'
+
 export const Brand = () => {
   const [index, setIndex] = useState<number | null>(null)
 
@@ -29,7 +31,7 @@ export const Brand = () => {
       onBlur={stop}
     >
       <span className="brand-text" key={index ?? 'jc'} aria-hidden="true">
-        {index === null ? 'JC.' : PHRASES[index]}
+        {index === null ? MAIN_BRAND : PHRASES[index]}
       </span>
     </p>
   )
