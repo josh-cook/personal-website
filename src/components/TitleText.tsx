@@ -11,10 +11,10 @@ export const TitleText = () => {
         </a>
       </p>
       <h1 id="site-title">Joshua Cook</h1>
-      <p className="hero-lead">I build things, game and make music.</p>
+      <p className="hero-lead">I build things, game, and make music.</p>
       <p className="hero-description">
         A developer based in Manchester, exploring the space between exploring,
-        gaming and code.
+        gaming, and code.
       </p>
     </div>
   );
