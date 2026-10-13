@@ -14,7 +14,7 @@ describe("App", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", {
-        name: "Curiosity first. Everything else follows.",
+        name: "I like figuring things out.",
       }),
     ).toBeInTheDocument();
 
