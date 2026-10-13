@@ -9,7 +9,7 @@ export const Content = () => {
         aria-labelledby="capabilities-title"
       >
         <div className="section-heading">
-          <h2 id="capabilities-title">A little bit of everything.</h2>
+          <h2 id="capabilities-title">Made of many things.</h2>
           <span>01—03</span>
         </div>
         <div className="capability-list">

@@ -10,7 +10,7 @@ describe('App', () => {
       screen.getByRole('heading', { name: 'Joshua Cook' }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: 'A little bit of everything.' }),
+      screen.getByRole('heading', { name: 'Made of many things.' }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
