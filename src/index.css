@@ -1,21 +1,36 @@
-html {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 255, 213, 0),
-    rgba(241, 89, 70, 1)
-  );
-  height: 100%;
+@font-face {
+  font-family: "Sulphur Point";
+  src: url("./fonts/SulphurPoint-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Sulphur Point";
-  src: url("../src/fonts/SulphurPoint-Light.ttf");
+  font-family: "Fira Code";
+  src: url("./fonts/FiraCode-VariableFont:wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #151515;
 }
 
 body {
-  margin: 1em;
-  color: #0c090d;
-  font-family: "Sulphur Point";
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: var(--frame-space);
+  color: #151515;
+  font-family: "Sulphur Point", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
 }
