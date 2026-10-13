@@ -1,4 +1,4 @@
-import { Links } from "./Links";
+import { Links } from './Links'
 
 export const Footer = () => {
   return (
@@ -9,7 +9,7 @@ export const Footer = () => {
         <Links />
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

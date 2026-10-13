@@ -17,7 +17,7 @@ export const TitleText = () => {
         gaming, and code.
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default TitleText;
+export default TitleText

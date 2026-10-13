@@ -1,8 +1,8 @@
 type LinkProps = {
-  link: string;
-  imageLink: string;
-  linkText: string;
-};
+  link: string
+  imageLink: string
+  linkText: string
+}
 
 export const Link = ({ link, imageLink, linkText }: LinkProps) => {
   return (
@@ -10,7 +10,7 @@ export const Link = ({ link, imageLink, linkText }: LinkProps) => {
       <img src={imageLink} alt="" />
       <span>{linkText}</span>
     </a>
-  );
-};
+  )
+}
 
-export default Link;
+export default Link

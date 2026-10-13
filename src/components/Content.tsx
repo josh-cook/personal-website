@@ -1,4 +1,4 @@
-import Capabilities from "./Capabilities";
+import Capabilities from './Capabilities'
 
 export const Content = () => {
   return (
@@ -26,7 +26,7 @@ export const Content = () => {
         </p>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content
