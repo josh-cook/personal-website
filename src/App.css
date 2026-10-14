@@ -316,17 +316,16 @@ a:focus-visible {
   }
 
   .hero {
-    min-height: 28rem;
+    min-height: 22rem;
   }
 
   .hero-bottom,
   .contact-bottom {
     align-items: flex-start;
-    flex-direction: column;
   }
 
   .links {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .capability {
