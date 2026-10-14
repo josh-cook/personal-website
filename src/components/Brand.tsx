@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 
 const PHRASES = [
-  'Joshua Cook',
   'Just Coding',
   'Jump Cancel',
   'Jukebox Companion',
+  'Joshua Cook',
 ]
 
 const MAIN_BRAND = 'JC.'
+
+const SEQUENCE = [MAIN_BRAND, ...PHRASES]
 
 export const Brand = () => {
   const [index, setIndex] = useState<number | null>(0)
@@ -18,8 +20,8 @@ export const Brand = () => {
 
     const timer = setTimeout(() => {
       setIndex((current) => {
-        if (!isHovered && current === PHRASES.length - 1) return null
-        return (current + 1) % PHRASES.length
+        if (!isHovered && current === SEQUENCE.length - 1) return null
+        return (current + 1) % SEQUENCE.length
       })
     }, 1500)
 
@@ -47,7 +49,7 @@ export const Brand = () => {
       tabIndex={0}
     >
       <span className="brand-text" key={index ?? 'jc'} aria-hidden="true">
-        {index === null ? MAIN_BRAND : PHRASES[index]}
+        {index === null ? MAIN_BRAND : SEQUENCE[index]}
       </span>
     </p>
   )
