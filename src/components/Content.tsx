@@ -24,6 +24,14 @@ export const Content = () => {
           A problem solver first, whether that's puzzles, writing code or
           pulling things apart to see how they work.
         </p>
+        <p>
+          Lately, that includes figuring out how to make AI useful. Exploring
+          new tools, building little experiments and finding ways to use them to
+          solve real problems, rather than just for the sake of it. I like
+          learning by doing, trying things out and seeing what sticks. There is
+          usually more than one way to solve any problem, and finding a better
+          one is most of the fun.
+        </p>
       </section>
     </>
   )

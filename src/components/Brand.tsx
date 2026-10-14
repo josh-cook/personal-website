@@ -9,17 +9,35 @@ const PHRASES = [
 
 const MAIN_BRAND = 'JC.'
 
+const SEQUENCE = [MAIN_BRAND, ...PHRASES]
+
 export const Brand = () => {
-  const [index, setIndex] = useState<number | null>(null)
+  const [index, setIndex] = useState<number | null>(0)
+  const [isHovered, setIsHovered] = useState(false)
 
   useEffect(() => {
     if (index === null) return
-    const timer = setTimeout(() => setIndex((index + 1) % PHRASES.length), 1500)
-    return () => clearTimeout(timer)
-  }, [index])
 
-  const start = () => setIndex(0)
-  const stop = () => setIndex(null)
+    const timer = setTimeout(() => {
+      setIndex((current) => {
+        if (current === null) return null
+        if (!isHovered && current === SEQUENCE.length - 1) return null
+        return (current + 1) % SEQUENCE.length
+      })
+    }, 1500)
+
+    return () => clearTimeout(timer)
+  }, [index, isHovered])
+
+  const start = () => {
+    setIsHovered(true)
+    setIndex(0)
+  }
+
+  const stop = () => {
+    setIsHovered(false)
+    setIndex(null)
+  }
 
   return (
     <p
@@ -29,9 +47,10 @@ export const Brand = () => {
       onMouseLeave={stop}
       onFocus={start}
       onBlur={stop}
+      tabIndex={0}
     >
       <span className="brand-text" key={index ?? 'jc'} aria-hidden="true">
-        {index === null ? MAIN_BRAND : PHRASES[index]}
+        {index === null ? MAIN_BRAND : SEQUENCE[index]}
       </span>
     </p>
   )
