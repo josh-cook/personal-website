@@ -20,6 +20,7 @@ export const Brand = () => {
 
     const timer = setTimeout(() => {
       setIndex((current) => {
+        if (current === null) return null
         if (!isHovered && current === SEQUENCE.length - 1) return null
         return (current + 1) % SEQUENCE.length
       })
