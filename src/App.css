@@ -224,7 +224,7 @@ a {
 }
 
 .contact {
-  padding: 1.5rem var(--page-gutter) 1.25rem;
+  padding: 2rem var(--page-gutter) 2rem;
   background: var(--coral);
 }
 
